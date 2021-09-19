@@ -1,4 +1,5 @@
-import "./assets/styles/global.css";
+import "./assets/styles/_global-variables.css";
+import "./assets/styles/_base.css";
 
 import React from "react";
 import ReactDOM from "react-dom";

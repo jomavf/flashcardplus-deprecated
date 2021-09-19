@@ -1,12 +1,40 @@
 .base {
-  font-size: var(--global--main-title--FontSize);
+  --button--PaddingTop: var(--global--spacer--xs);
+  --button--PaddingRight: var(--global--spacer--xl);
+  --button--PaddingBottom: var(--global--spacer--xs);
+  --button--PaddingLeft: var(--global--spacer--xl);
+  --button--LineHeight: var(--global--sm--LineHeight);
+  --button--FontWeight: var(--global--normal--FontWeight);
+
+  /* Primary btn */
+  --button--primary--BackgroundColor: var(--global--primary--Color);
+  --button--primary--hover--BackgroundColor: var(--global--primary-dark--Color);
+
+  /* Warning btn */
+  --button--warning--BackgroundColor: var(--global--warning--Color);
+  --button--warning--hover--BackgroundColor: var(
+    --global--warning--dark--Color
+  );
+
+  /* Danger btn */
+  --button--danger--BackgroundColor: var(--global--danger--Color);
+  --button--danger--hover--BorderColor: var(--global--danger-dark--Color);
+
+  /* Sizes */
+  --button--small--FontSize: var(--global--body--FontSize);
+  --button--large--FontSize: var(--global--sub-title--FontSize);
+
+  font-size: var(--button--large--FontSize);
+  padding: var(--button--PaddingTop) var(--button--PaddingRight)
+    var(--button--PaddingBottom) var(--button--PaddingLeft);
 }
 
 .primary {
   composes: base;
+  background-color: var(--global--primary--Color);
 }
 
 .secondary {
   composes: base;
-  font-family: open-sans;
+  background-color: var(--global--secondary--Color);
 }

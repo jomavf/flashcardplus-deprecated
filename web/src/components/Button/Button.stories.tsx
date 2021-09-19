@@ -6,11 +6,11 @@ export default {
 };
 
 export const Primary = () => (
-  <Button onClick={() => console.log("I am working")}>Default style</Button>
+  <Button onClick={() => console.log("I am working")}>Primary</Button>
 );
 
 export const Secondary = () => (
   <Button variant="secondary" onClick={() => console.log("I am working")}>
-    Default style
+    Secondary
   </Button>
 );

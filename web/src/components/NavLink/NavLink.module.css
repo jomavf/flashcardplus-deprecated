@@ -1,4 +1,11 @@
 .base {
-  color: inherit;
+  --navLink--light--color: var(--global--light--Color);
+  --navLink--light--fontSize: var(--global--sub-title--FontSize);
+
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--navLink--light--color);
+  font-size: 1.2rem;
 }

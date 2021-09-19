@@ -6,10 +6,14 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children }: LayoutProps) => {
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "My Decks", path: "/mydecks" },
+  ];
   return (
     <div className={styles.base}>
       <header>
-        <Nav items={[{ name: "home", path: "/" }]}></Nav>
+        <Nav items={navItems}></Nav>
       </header>
       <aside>hey</aside>
       <main>{children}</main>

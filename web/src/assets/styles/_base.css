@@ -1,0 +1,111 @@
+/* Reset */
+/* Based on minireset.css v0.0.3 */
+/* https://github.com/jgthms/minireset.css */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: var(--global--normal--FontWeight);
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/* Patternfly base styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--global--FontFamily);
+}
+
+body {
+  font-size: var(--global--body--FontSize);
+  font-weight: var(--global--normal--FontWeight);
+  line-height: var(--global--md--LineHeight);
+  color: var(--global--dark--Color);
+  text-align: left;
+  background-color: var(--global--light--BackgroundColor);
+}
+
+/* Links styles */
+
+a {
+  color: var(--global--link--Color);
+  text-decoration: var(--global--link--TextDecoration);
+}
+
+a:hover {
+  color: var(--global--link--hover--Color);
+  text-decoration: var(--global--link--hover--TextDecoration);
+}
+
+button,
+a {
+  cursor: pointer;
+}

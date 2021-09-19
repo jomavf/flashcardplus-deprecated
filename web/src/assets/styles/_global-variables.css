@@ -1,0 +1,107 @@
+/* https://css-tricks.com/theming-with-variables-globals-and-locals/ */
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/UbuntuMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/UbuntuMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/UbuntuMono-BoldItalic.ttf") format("truetype");
+}
+
+/* Global variables follow the formula: */
+/* `--global--concept--modifier--state--PropertyCamelCase` */
+
+:root {
+  /* Links */
+  --global--link--Color: var(--global--primary--Color);
+  --global--link--TextDecoration: none;
+  --global--link--hover-Color: #0088ce;
+  --global--link--hover--TextDecoration: underline;
+
+  /* Borders */
+  --global--BorderWidth: 1px;
+  --global--dark--BorderColor: #bbb;
+  --global--light--BorderColor: #d1d1d1;
+
+  /* spacers */
+  /* https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
+  --global--spacer--xxs: 0.125rem;
+  --global--spacer--xs: 0.25rem;
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+  --global--spacer--xl: 3rem;
+
+  /* Color */
+
+  /* Theme colors */
+  --global--primary--Color: #43b0f1;
+  --global--primary--dark--Color: #43b0f1;
+
+  --global--secondary--Color: #189ab4;
+  --global--secondary--dark--Color: #189ab4;
+
+  --global--warning--Color: #ecf87f;
+  --global--warning--dark--Color: #ecf87f;
+
+  /* Text color */
+  --global--dark--Color: #1e3d58;
+  --global--light--Color: #e8eef1;
+
+  /* Background color */
+  --global--light--BackgroundColor: #e8eef1;
+  --global--dark--BackgroundColor: #1e3d58;
+
+  /* Breakpoint */
+  /* http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/ */
+  --global--breakpoint--xs: 0;
+  --global--breakpoint--sm: 24em;
+  --global--breakpoint--md: 50;
+  --global--breakpoint--lg: 50em;
+  --global--breakpoint--xl: 73em;
+
+  /* Typography */
+
+  /* Font family */
+  --global--FontFamily: “Ubunto Mono”, monospace, “open sans”, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* Font size */
+  --global--hero-title--FontSize: 3rem;
+  --global--main-title--FontSize: 2rem;
+  --global--secondary--title-FontSize: 1.5rem;
+  --global--sub-title--FontSize: 1.2rem;
+  --global--body--FontSize: 1rem;
+  --global--caption--FontSize: 0.8rem;
+
+  /* line height */
+  --global--sm--LineHeight: 1.1;
+  --global--md--LineHeight: 1.5;
+  --global--lg--LineHeight: 2;
+
+  /* Font weight */
+  --global--light--FontWeight: 300;
+  --global--normal--FontWeight: 400;
+  --global--bold--FontWeight: 700;
+}
