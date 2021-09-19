@@ -1,0 +1,15 @@
+.base {
+  display: grid;
+  grid-template-areas: "header header" "sidebar main";
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: sidebar;
+}
+main {
+  grid-area: main;
+}
