@@ -1,5 +1,6 @@
 module.exports = ({ config }) => {
   return {
+    ...config,
     stories: [
       "../src/**/*.stories.mdx",
       "../src/**/*.stories.@(js|jsx|ts|tsx)",

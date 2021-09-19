@@ -1,4 +1,4 @@
-import "./Button.css";
+import styles from "./Button.module.css";
 import React from "react";
 
 interface Props {
@@ -8,9 +8,8 @@ interface Props {
 }
 
 export const Button = ({ children, onClick, variant = "primary" }: Props) => {
-  const className = `button button--${variant}`;
   return (
-    <button className={className} onClick={onClick}>
+    <button className={styles.base} onClick={onClick}>
       {children}
     </button>
   );
