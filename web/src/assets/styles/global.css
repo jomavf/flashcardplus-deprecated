@@ -14,3 +14,12 @@
   /* --global--state--PropertyCamelCase */
   --global--hover--BackgroundColor: #ccc;
 }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Ubuntu Mono", monospace;
+}

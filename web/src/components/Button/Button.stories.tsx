@@ -5,6 +5,12 @@ export default {
   component: Button,
 };
 
-export const Default = () => (
+export const Primary = () => (
   <Button onClick={() => console.log("I am working")}>Default style</Button>
+);
+
+export const Secondary = () => (
+  <Button variant="secondary" onClick={() => console.log("I am working")}>
+    Default style
+  </Button>
 );

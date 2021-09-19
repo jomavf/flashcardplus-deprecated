@@ -8,8 +8,9 @@ interface Props {
 }
 
 export const Button = ({ children, onClick, variant = "primary" }: Props) => {
+  const className = styles[variant];
   return (
-    <button className={styles.base} onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {children}
     </button>
   );
