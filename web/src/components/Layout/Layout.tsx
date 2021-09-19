@@ -9,7 +9,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={styles.base}>
       <header>
-        <Nav></Nav>
+        <Nav items={[{ name: "home", path: "/" }]}></Nav>
       </header>
       <aside>hey</aside>
       <main>{children}</main>

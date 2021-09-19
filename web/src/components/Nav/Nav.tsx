@@ -1,10 +1,25 @@
-import { Link } from "@reach/router";
+import styles from "./Nav.module.css";
 
-export const Nav = () => {
+import { NavLink } from "../NavLink";
+
+interface NavProps {
+  isLoggedIn?: boolean;
+  items: {
+    name: string;
+    path: string;
+  }[];
+}
+
+export const Nav = ({ items = [] }: NavProps) => {
   return (
-    <nav className="container">
-      <Link to="/">Home</Link>
-      <Link to="/cards">Your Cards</Link>
+    <nav className={styles.container}>
+      {items.map((item, index) => {
+        return (
+          <NavLink to={item.path} key={index}>
+            {item.name}
+          </NavLink>
+        );
+      })}
     </nav>
   );
 };
