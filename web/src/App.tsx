@@ -1,20 +1,17 @@
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 
 import { Home } from "./core";
+import { Layout } from "./components";
 
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/cards">Cards</Link>
-      </nav>
+    <Layout>
       <Router>
         <Home path="/" />
       </Router>
-    </div>
+    </Layout>
   );
 }
 
