@@ -1,11 +1,11 @@
 @font-face {
   font-family: "UbuntuMono";
-  src: url(./assets/fonts/UbuntuMono/UbuntuMono-Regular.ttf) format("ttf");
+  src: url(./assets/fonts/UbuntuMono-Regular.ttf) format("ttf");
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "UbuntuMono" sans-serif;
+  font-family: "UbuntuMono";
 }
