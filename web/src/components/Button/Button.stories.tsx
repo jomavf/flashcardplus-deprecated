@@ -8,8 +8,3 @@ export default {
 export const Default = () => (
   <Button onClick={() => console.log("I am working")}>Default style</Button>
 );
-
-const Primary = Default.bind({});
-Primary.args = {
-  variant: "primary",
-};
