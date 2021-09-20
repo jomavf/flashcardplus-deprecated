@@ -1,4 +1,6 @@
 .base {
+  --layout-padding: var(--global--spacer--xl);
+
   display: grid;
   grid-template-areas: "header header" "sidebar main";
   min-height: 100vh;
@@ -14,4 +16,5 @@ aside {
 }
 main {
   grid-area: main;
+  padding: var(--layout-padding);
 }

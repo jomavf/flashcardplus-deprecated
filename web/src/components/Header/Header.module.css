@@ -1,0 +1,14 @@
+.base {
+  /* Colors */
+  --header--light--backgroundColor: var(--global--secondary--Color);
+  --header--horizontal--padding: var(--global--spacer--lg);
+  --header--spacing--gap: var(--global--spacer--lg);
+
+  display: grid;
+  padding: 0 var(--header--horizontal--padding);
+  grid-template-columns: auto 1fr auto auto;
+  column-gap: var(--header--spacing--gap);
+  max-height: 3rem;
+  height: 3rem;
+  background-color: var(--header--light--backgroundColor);
+}

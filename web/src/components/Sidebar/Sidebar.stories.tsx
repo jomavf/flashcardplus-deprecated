@@ -1,12 +1,12 @@
-import { Nav } from "./Nav";
+import { Sidebar } from "./Sidebar";
 
 export default {
-  title: "Nav",
-  component: Nav,
+  title: "Sidebar",
+  component: Sidebar,
 };
 
 export const Default = () => (
-  <Nav
+  <Sidebar
     items={[
       { name: "Home", path: "/" },
       { name: "Your Cards", path: "/" },

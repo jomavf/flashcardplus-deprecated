@@ -1,0 +1,13 @@
+.container {
+  /* Colors */
+  --nav--dark--backgroundColor: var(--global--dark--BackgroundColor);
+  --nav--rowGap: var(--global--spacer--lg);
+
+  display: grid;
+  padding: var(--global--spacer--lg) 0;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: repeat(auto-fill, minmax(2rem, 1fr));
+  row-gap: var(--nav--rowGap);
+  background-color: var(--nav--dark--backgroundColor);
+}

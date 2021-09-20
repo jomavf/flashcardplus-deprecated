@@ -1,8 +1,8 @@
-import styles from "./Nav.module.css";
+import styles from "./Sidebar.module.css";
 
 import { NavLink } from "../NavLink";
 
-interface NavProps {
+interface SidebarProps {
   isLoggedIn?: boolean;
   items: {
     name: string;
@@ -10,9 +10,9 @@ interface NavProps {
   }[];
 }
 
-export const Nav = ({ items = [] }: NavProps) => {
+export const Sidebar = ({ items = [] }: SidebarProps) => {
   return (
-    <nav className={styles.container}>
+    <aside className={styles.container}>
       {items.map((item, index) => {
         return (
           <NavLink to={item.path} key={index}>
@@ -20,6 +20,6 @@ export const Nav = ({ items = [] }: NavProps) => {
           </NavLink>
         );
       })}
-    </nav>
+    </aside>
   );
 };

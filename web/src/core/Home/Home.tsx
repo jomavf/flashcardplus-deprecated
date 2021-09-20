@@ -1,16 +1,11 @@
-import { Button } from "../../components";
+import styles from "./Home.module.css";
 
-interface Props {
-  path: string;
-}
+interface HomeProps {}
 
-export const Home = (props: Props) => {
+export const Home = (props: any) => {
   return (
-    <div>
-      <Button onClick={() => console.log("Heyyy")}>Go to See cards</Button>
-      <Button onClick={() => console.log("Create card")}>
-        Go to Create card
-      </Button>
+    <div className={styles.container}>
+      <h1>Home</h1>
     </div>
   );
 };

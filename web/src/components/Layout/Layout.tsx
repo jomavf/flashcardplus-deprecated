@@ -1,21 +1,25 @@
 import styles from "./Layout.module.css";
-import { Nav } from "../Nav";
+import { Header } from "../Header";
+import { Sidebar } from "../Sidebar";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 export const Layout = ({ children }: LayoutProps) => {
-  const navItems = [
+  const sidebarItems = [
     { name: "Home", path: "/" },
     { name: "My Decks", path: "/mydecks" },
   ];
+  const headerItems = [
+    { name: "Login", path: "/login" },
+    { name: "Sign up", path: "/signup" },
+  ];
+
   return (
     <div className={styles.base}>
-      <header>
-        <Nav items={navItems}></Nav>
-      </header>
-      <aside>hey</aside>
+      <Header items={headerItems} />
+      <Sidebar items={sidebarItems}></Sidebar>
       <main>{children}</main>
     </div>
   );
