@@ -1,6 +1,6 @@
 import { Router } from "@reach/router";
 
-import { Home } from "./core";
+import { Home } from "./screens";
 
 import "./App.css";
 

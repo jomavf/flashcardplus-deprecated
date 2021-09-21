@@ -1,0 +1,22 @@
+.base {
+  --Text--fontSize--title: var(--global--hero-title--FontSize);
+  --Text--fontSize--subtitle: var(--global--sub-title-title--FontSize);
+  --Text--fontSize--p: var(--global--body--FontSize);
+
+  --Text--color: var(--global--primary--Color);
+}
+
+.title {
+  color: var(--Text--color);
+  font-size: var(--Text--fontSize--title);
+}
+
+.subtitle {
+  color: var(--Text--color);
+  font-size: var(--Text--fontSize--subtitle);
+}
+
+.p {
+  color: var(--Text--color);
+  font-size: var(--Text--fontSize--p);
+}

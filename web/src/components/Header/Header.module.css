@@ -10,5 +10,6 @@
   column-gap: var(--header--spacing--gap);
   max-height: 3rem;
   height: 3rem;
+  align-items: center;
   background-color: var(--header--light--backgroundColor);
 }

@@ -1,11 +1,10 @@
 import styles from "./Home.module.css";
-
-interface HomeProps {}
+import { MyDecks } from "../../core";
 
 export const Home = (props: any) => {
   return (
     <div className={styles.container}>
-      <h1>Home</h1>
+      <MyDecks />
     </div>
   );
 };
