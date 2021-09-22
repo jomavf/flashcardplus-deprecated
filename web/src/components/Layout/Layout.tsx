@@ -2,20 +2,21 @@ import styles from "./Layout.module.css";
 import { Header } from "../Header";
 import { Sidebar } from "../Sidebar";
 
+interface ItemProps {
+  name: string;
+  path: string;
+}
 interface LayoutProps {
   children: React.ReactNode;
+  sidebarItems: ItemProps[];
+  headerItems: ItemProps[];
 }
 
-export const Layout = ({ children }: LayoutProps) => {
-  const sidebarItems = [
-    { name: "Home", path: "/" },
-    { name: "My Decks", path: "/mydecks" },
-  ];
-  const headerItems = [
-    { name: "Login", path: "/login" },
-    { name: "Sign up", path: "/signup" },
-  ];
-
+export const Layout = ({
+  children,
+  sidebarItems,
+  headerItems,
+}: LayoutProps) => {
   return (
     <div className={styles.base}>
       <Header items={headerItems} />

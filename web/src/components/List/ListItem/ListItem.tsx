@@ -13,8 +13,10 @@ export const ListItem = ({ title, actions }: ListItemProps) => {
   return (
     <div className={styles.container}>
       <Text variant="p">{title}</Text>
-      {actions.map(({ title, onClick }) => (
-        <Button onClick={onClick}>{title}</Button>
+      {actions.map(({ title, onClick }, index) => (
+        <Button onClick={onClick} key={index}>
+          {title}
+        </Button>
       ))}
     </div>
   );

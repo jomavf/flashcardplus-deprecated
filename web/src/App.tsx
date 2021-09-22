@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Home path="/" />
+      <Home path="/mydecks" />
     </Router>
   );
 }
