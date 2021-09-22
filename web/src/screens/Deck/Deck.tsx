@@ -1,7 +1,7 @@
-import styles from "./Home.module.css";
+import styles from "./Deck.module.css";
 import { MyDecks } from "../../core";
 
-export const Home = (props: any) => {
+export const DeckPage = (props: any) => {
   return (
     <div className={styles.container}>
       <MyDecks />

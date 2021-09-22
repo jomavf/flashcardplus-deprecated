@@ -1,7 +1,10 @@
+import styles from "./MyDecks.module.css";
+
 import { useState } from "react";
-import { Text } from "../../components";
+import { Button, Text } from "../../components";
 import { List } from "../../components/List";
 import deckMockData from "./decks.json";
+import { navigate } from "@reach/router";
 
 export interface Deck {
   id: string;
@@ -46,9 +49,15 @@ export const MyDecks = () => {
       },
     },
   ];
+
   return (
     <>
-      <Text variant="title">My Decks</Text>
+      <div className={styles.titleContainer}>
+        <Text variant="title">My Decks</Text>
+        <div>
+          <Button onClick={() => navigate("decks/create")}>Create Deck</Button>
+        </div>
+      </div>
       <List
         items={decks.map((deck) => ({ ...deck, title: deck.name }))}
         actions={actions}
