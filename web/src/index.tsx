@@ -8,9 +8,15 @@ import reportWebVitals from "./reportWebVitals";
 
 import { Layout } from "./components";
 
+const sidebarItems = [{ name: "My Decks", path: "/mydecks" }];
+const headerItems = [
+  { name: "Login", path: "/login" },
+  { name: "Sign up", path: "/signup" },
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <Layout>
+    <Layout sidebarItems={sidebarItems} headerItems={headerItems}>
       <App />
     </Layout>
   </React.StrictMode>,
