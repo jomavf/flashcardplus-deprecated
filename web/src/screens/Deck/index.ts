@@ -1,2 +1,2 @@
 export * from "./Deck";
-export * from "./AddDeck";
+export * from "../AddCard";

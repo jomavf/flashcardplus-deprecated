@@ -1,6 +1,6 @@
-import { Router } from "@reach/router";
+import { Redirect, Router } from "@reach/router";
 
-import { DeckPage, AddDeckPage } from "./screens";
+import { DeckPage, AddCardPage } from "./screens";
 
 import "./App.css";
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <Router>
       <DeckPage path="/decks" />
-      <AddDeckPage path="/decks/create" />
+      <AddCardPage path="/cards/create" />
+      <Redirect from="*" to="/decks" noThrow />
     </Router>
   );
 }

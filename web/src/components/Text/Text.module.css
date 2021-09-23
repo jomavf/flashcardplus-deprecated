@@ -2,6 +2,7 @@
   --Text--fontSize--title: var(--global--hero-title--FontSize);
   --Text--fontSize--subtitle: var(--global--sub-title-title--FontSize);
   --Text--fontSize--p: var(--global--body--FontSize);
+  --Text--fontSize--caption: var(--global--caption--FontSize);
 
   --Text--color: var(--global--primary--Color);
 }
@@ -19,4 +20,9 @@
 .p {
   color: var(--Text--color);
   font-size: var(--Text--fontSize--p);
+}
+
+.caption {
+  color: var(--Text--color);
+  font-size: var(--Text--fontSize--caption);
 }

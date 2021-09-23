@@ -10,7 +10,7 @@ import { Layout } from "./components";
 
 const sidebarItems = [
   { name: "My Decks", path: "/decks" },
-  { name: "Create Deck", path: "/decks/create" },
+  { name: "Create Card", path: "/cards/create" },
 ];
 
 const headerItems = [
