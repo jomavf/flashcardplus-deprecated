@@ -1,8 +1,11 @@
 import styles from "./AddCard.module.css";
 import { Text, Input, Button } from "../../components";
 import { useState } from "react";
+import constants from "../../shared/contants";
 
 export const AddCardPage = (props: any) => {
+  const cardApiUrl = `${constants.API_URL}/cards`;
+
   const [cardList] = useState([{ id: 1, label: "Javascript", value: "js" }]);
 
   const createCard = async () => {
@@ -11,7 +14,7 @@ export const AddCardPage = (props: any) => {
       back: "back",
       deckId: "1",
     };
-    const response = await fetch("http://localhost:5000/card", {
+    const response = await fetch(cardApiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
