@@ -4,4 +4,10 @@ import { Column, Entity, ObjectID, ObjectIdColumn } from 'typeorm';
 export class Deck {
   @ObjectIdColumn()
   id: ObjectID;
+
+  @Column()
+  title: string;
+
+  @Column()
+  cards: string[];
 }

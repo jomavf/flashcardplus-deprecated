@@ -1,1 +1,3 @@
-export class CreateDeckDto {}
+export class CreateDeckDto {
+  readonly title: string;
+}
