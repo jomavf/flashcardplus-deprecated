@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/flashcardplus/static/css/main.9776f249.chunk.css",
-    "main.js": "/flashcardplus/static/js/main.6bf92512.chunk.js",
-    "main.js.map": "/flashcardplus/static/js/main.6bf92512.chunk.js.map",
-    "runtime-main.js": "/flashcardplus/static/js/runtime-main.04be1838.js",
-    "runtime-main.js.map": "/flashcardplus/static/js/runtime-main.04be1838.js.map",
-    "static/js/2.3db964da.chunk.js": "/flashcardplus/static/js/2.3db964da.chunk.js",
-    "static/js/2.3db964da.chunk.js.map": "/flashcardplus/static/js/2.3db964da.chunk.js.map",
-    "static/js/3.681df910.chunk.js": "/flashcardplus/static/js/3.681df910.chunk.js",
-    "static/js/3.681df910.chunk.js.map": "/flashcardplus/static/js/3.681df910.chunk.js.map",
+    "main.css": "/flashcardplus/static/css/main.d3ce0da4.chunk.css",
+    "main.js": "/flashcardplus/static/js/main.00f9a109.chunk.js",
+    "main.js.map": "/flashcardplus/static/js/main.00f9a109.chunk.js.map",
+    "runtime-main.js": "/flashcardplus/static/js/runtime-main.5ea14940.js",
+    "runtime-main.js.map": "/flashcardplus/static/js/runtime-main.5ea14940.js.map",
+    "static/js/2.0f3785b0.chunk.js": "/flashcardplus/static/js/2.0f3785b0.chunk.js",
+    "static/js/2.0f3785b0.chunk.js.map": "/flashcardplus/static/js/2.0f3785b0.chunk.js.map",
+    "static/js/3.9cd42dad.chunk.js": "/flashcardplus/static/js/3.9cd42dad.chunk.js",
+    "static/js/3.9cd42dad.chunk.js.map": "/flashcardplus/static/js/3.9cd42dad.chunk.js.map",
     "index.html": "/flashcardplus/index.html",
-    "static/css/main.9776f249.chunk.css.map": "/flashcardplus/static/css/main.9776f249.chunk.css.map",
-    "static/js/2.3db964da.chunk.js.LICENSE.txt": "/flashcardplus/static/js/2.3db964da.chunk.js.LICENSE.txt"
+    "static/css/main.d3ce0da4.chunk.css.map": "/flashcardplus/static/css/main.d3ce0da4.chunk.css.map",
+    "static/js/2.0f3785b0.chunk.js.LICENSE.txt": "/flashcardplus/static/js/2.0f3785b0.chunk.js.LICENSE.txt",
+    "static/media/_global-variables.css": "/flashcardplus/static/media/UbuntuMono-Regular.f17c0593.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.04be1838.js",
-    "static/js/2.3db964da.chunk.js",
-    "static/css/main.9776f249.chunk.css",
-    "static/js/main.6bf92512.chunk.js"
+    "static/js/runtime-main.5ea14940.js",
+    "static/js/2.0f3785b0.chunk.js",
+    "static/css/main.d3ce0da4.chunk.css",
+    "static/js/main.00f9a109.chunk.js"
   ]
 }

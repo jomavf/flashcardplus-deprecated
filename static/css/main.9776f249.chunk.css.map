@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/Button/Button.css"],"names":[],"mappings":"AAAA,QACE,cACF","file":"main.9776f249.chunk.css","sourcesContent":[".button {\n  background: red;\n}\n"]}
