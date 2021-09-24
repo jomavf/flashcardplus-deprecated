@@ -5,7 +5,7 @@ import { CreateCardDto } from './dto/create-card.dto';
 import { UpdateCardDto } from './dto/update-card.dto';
 import { Card } from './entities/card.entity';
 
-@Injectable()
+Injectable();
 export class CardService {
   constructor(
     @InjectRepository(Card)
@@ -13,13 +13,11 @@ export class CardService {
   ) {}
 
   async create(createCardDto: CreateCardDto) {
-    const card = await this.cardRepository.save(createCardDto);
-    console.log('card', card);
-    return card;
+    return await this.cardRepository.save(createCardDto);
   }
 
-  findAll() {
-    return `This action returns all card`;
+  async findAll() {
+    return await this.cardRepository.find();
   }
 
   findOne(id: number) {
